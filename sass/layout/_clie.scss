@@ -1,0 +1,87 @@
+#clients {
+
+    #clie {
+        #tit {
+            display: flex;
+            margin-bottom: 9px;
+            border-bottom: 1px solid var(--color-gray-8);
+
+            img {
+                top: -5px;
+                left: 5px;
+                position: relative;
+            }
+
+            h1 {
+                position: relative;
+                width: 100%;
+                left: -50px;
+                padding-left: 70px;
+                font-size: var(--font-size-6);
+                font-family: var(--font-family-1);
+                color: var(--color-orange-1);
+                font-weight: 300;
+                padding-bottom: 14px;
+            }
+        }
+
+        #client-img {
+
+            >div {
+                margin-bottom: 28px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 11px;
+                    margin-bottom: 9px;
+                    border: 11px solid var(--color-gray-16);
+                }
+
+                a {
+                    font-weight: bold;
+                    font-family: var(--font-family-1);
+                    color: var(--color-gray-7);
+                    font-size: var(--font-size-1);
+                    text-decoration: none;
+                    margin-left: 9px;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-size: var(--font-size-1);
+                    line-height: 18px;
+                    color: var(--color-gray-4);
+                    font-family: var(--font-family-2);
+                    margin-left: 9px;
+                }
+            }
+
+            >div:nth-child(odd) {
+                margin-right: 34px;
+            }
+
+            >div:nth-child(even) {
+                margin-left: 34px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #client-img {
+                >div {
+                    display: grid;
+                    justify-items: stretch;
+                }
+
+                >div:nth-child(odd) {
+
+                    margin-right: 0px;
+                }
+
+                >div:nth-child(even) {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}

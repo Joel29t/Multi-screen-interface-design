@@ -1,0 +1,51 @@
+body {
+    background: var(--gradient-background);
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0px 34px;
+}
+
+#contact main,
+#clients main {
+    background-color: var(--background-white);
+    border-radius: 8px;
+}
+
+#contact main {
+    padding: 26px 13px 0 11px;
+    margin-bottom: 25px;
+}
+
+#clients main {
+    padding: 22px 13px 20px 10px;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        min-height: 1000px;
+ height: 100vh;
+    }
+
+    #contact main {
+      min-height: 600px;
+        height: calc(100vh - 188px);
+    }
+
+    #clients main {
+        min-height: 700px;
+      height: calc(100vh - 210px);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #contact main {
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact main {
+        padding-bottom: 100px;
+    }
+}

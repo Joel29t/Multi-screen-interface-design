@@ -1,0 +1,117 @@
+#content {
+    font-family: var(--font-family-1);
+    display: flex;
+    background-color: var(--background-white);
+    filter: var(--filter-content);
+    border-radius: 8px;
+    padding: 0px;
+    margin-bottom: 24px;
+
+    img {
+        flex: 3;
+        max-width: 100%;
+        height: auto;
+        filter: var(--filter-img);
+    }
+
+    article {
+        font-family: var(--font-family-1);
+        flex: 3;
+        padding: 10px 5px 0 0;
+
+        h1 {
+            font-size: var(--font-size-7);
+            color: var(--color-gray-2);
+            border-bottom: 1px solid var(--color-gray-8);
+            font-weight: 300;
+            padding-bottom: 13px;
+            margin-bottom: 21px;
+
+            span {
+                color: var(--color-orange-1);
+            }
+        }
+
+        >span {
+            font-family: var(--font-family-1);
+            color: var(--color-gray-3);
+            font-size: var(--font-size-3);
+            border-bottom: 1px solid var(--color-gray-8);
+            display: inline-block;
+            padding-bottom: 13px;
+            margin-bottom: 21px;
+        }
+
+        p {
+            font-family: var(--font-family-2);
+            font-size: var(--font-size-1);
+            color: var(--color-gray-4);
+            margin-bottom: 17px;
+        }
+    }
+
+    button {
+        background: var(--gradient-button);
+        font-size: var(--font-size-1);
+        width: 91px;
+        height: 24px;
+        border-radius: 11px;
+        color: var(--color-gray-5);
+        border: 1px solid var(--color-gray-9);
+        font-family: var(--font-family-2);
+        float: right;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #content {
+        height: 257px;
+        
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #content {
+        flex-direction: column;
+
+        img,
+        article {
+            flex: 1;
+        }
+
+        article {
+            padding: 10px 10px 0 8px;
+        }
+
+        span {
+            width: 100%;
+        }
+
+        button {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #content {
+        flex-direction: column;
+
+        img,
+        article {
+            flex: 1;
+        }
+
+        article {
+            padding: 10px 10px 0 8px;
+        }
+
+        span {
+            width: 100%;
+        }
+
+        button {
+            margin-bottom: 15px;
+        }
+    }
+}

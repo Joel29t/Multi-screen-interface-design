@@ -1,0 +1,130 @@
+.service-box {
+    border: var(--color-gray-12) 1px solid;
+    border-radius: 5px;
+    background-color: var(--background-white);
+    filter: var(--filter-service-box);
+
+    h2 {
+        margin: 1px 1px 0 1px;
+        background: var(--gradient-service-box);
+        height: 34px;
+        font-family: var(--font-family-1);
+        color: var(--color-gray-6);
+        font-size: var(--font-size-5);
+        padding: 8px 0 0 14px;
+        font-weight: 100;
+    }
+
+    >div {
+        border-top: var(--color-gray-12) 1px solid;
+        display: flex;
+        padding-top: 19px;
+        margin: 1px;
+
+        img {
+            margin-left: 6px;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 13px;
+            margin-bottom: 26px;
+            margin-top: 4px;
+
+            h3 {
+                font-size: var(--font-size-2);
+                color: var(--color-gray-1);
+                font-weight: bold;
+                font-family: var(--font-family-2);
+            }
+
+            p {
+                font-size: var(--font-size-1);
+                line-height: 18px;
+                color: var(--color-gray-4);
+                font-family: var(--font-family-2);
+
+                span {
+                    color: var(--color-gray-1);
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
+
+    a {
+        margin-right: 8px;
+        float: right;
+        text-decoration: none;
+        font-size: var(--font-size-1);
+        color: var(--color-orange-1);
+        font-family: var(--font-family-2);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #solutions {
+        margin: 0 calc((40px / 3) / 2);
+
+        img {
+            height: 52px;
+        }
+    }
+
+    #web_desing {
+        margin-right: calc(40px / 3);
+
+        img {
+            height: 46px;
+        }
+    }
+
+    #testimonial {
+        margin-left: calc(40px / 3);
+
+        img {
+            height: 56px;
+        }
+    }
+
+    .service-box {
+        max-height: 195px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #solutions {
+        margin: 24px 0 10px 10px;
+    }
+
+    #web_desing {
+        margin: 24px 10px 10px 0;
+    }
+
+    #testimonial {
+        margin: 10px 10px 10px 0;
+        height: 187px;
+    }
+
+    .service-box {
+        a {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .service-box {
+        margin: 10px 0 10px 0;
+
+        a {
+            margin-bottom: 12px;
+        }
+    }
+
+    #web_desing {
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,36 @@
+#clients {
+    #testis {
+        margin-left: 10px;
+        padding-top: 6px;
+
+        h2 {
+            font-size: var(--font-size-4);
+            font-family: var(--font-family-1);
+            color: var(--color-orange-1);
+            border-bottom: 1px solid var(--color-gray-8);
+            font-weight: 300;
+            padding-bottom: 14px;
+            margin-bottom: 11px;
+            list-style-image: url("../public/img/Clients_Image.svg");
+        }
+
+        div {
+            margin-bottom: 21px;
+
+            p {
+                font-size: var(--font-size-1);
+                line-height: 18px;
+                color: var(--color-gray-4);
+                font-family: var(--font-family-2);
+                font-style: italic;
+                margin-bottom: 13px;
+            }
+
+            strong {
+                font-size: var(--font-size-1);
+                font-family: var(--font-family-2);
+                color: var(--color-gray-15);
+            }
+        }
+    }
+}

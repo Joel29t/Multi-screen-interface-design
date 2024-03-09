@@ -1,0 +1,55 @@
+#contact {
+    #touch {
+        margin-left: 21px;
+
+        h2 {
+            font-size: var(--font-size-4);
+            color: var(--color-orange-1);
+            font-family: var(--font-family-1);
+            padding-bottom: 6px;
+            margin: 10px 10px 10px 0;
+            border-bottom: 1px solid var(--color-gray-8);
+            font-weight: 500;
+        }
+
+        ul {
+            list-style-type: disc;
+            color: #ec8a1b;
+            margin: 0 0 16px 21px;
+
+            li {
+                line-height: 18px;
+
+                a {
+                    color: var(--color-gray-15);
+                    font-family: var(--font-family-2);
+                    font-size: var(--font-size-1);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        #follow {
+            margin-bottom: 20px;
+
+            img {
+                margin-right: 28px;
+            }
+        }
+
+        p {
+            font-size: var(--font-size-1);
+            line-height: 18px;
+            color: var(--color-gray-4);
+            font-family: var(--font-family-2);
+            font-style: italic;
+            margin-bottom: 13px;
+        }
+
+        strong {
+            font-size: var(--font-size-1);
+            font-family: var(--font-family-2);
+            color: var(--color-gray-15);
+        }
+    }
+}

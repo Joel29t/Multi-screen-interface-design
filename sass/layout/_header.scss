@@ -1,0 +1,180 @@
+header {
+    color: var(--color-gray-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 8px 35px 8px;
+
+    #hamburger {
+        cursor: pointer;
+        margin-top: 24px;
+    }
+
+    #hamburger img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #logo {
+        font-size: var(--font-size-8);
+        font-family: var(--font-family-1);
+        margin-top: 20px;
+
+        span {
+            color: var(--color-orange-2);
+        }
+    }
+
+    #logo-circle {
+        width: 24px;
+        height: 25px;
+        border-radius: 13px;
+        background-color: var(--color-orange-2);
+        margin: 20px 0 4px 76px;
+        position: absolute;
+    }
+
+    #dark-mode {
+        width: 20px;
+        height: 20px;
+        margin: 24px auto 0 auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 32px;
+
+        ul {
+            align-items: center;
+
+            li {
+                font-size: var(--font-size-1);
+                font-family: var(--font-family-2);
+                align-items: center;
+                padding: 11px 13px;
+
+
+                a {
+                    text-decoration: none;
+                    color: var(--color-gray-1);
+                }
+
+                &:hover {
+                    a {
+                        color: var(--color-white);
+                    }
+
+                    color: var(--color-white);
+                    border-radius: 2px;
+                    background-image: var(--gradient-header);
+                    outline: 1px solid var(--color-gray-11);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 18px;
+
+        #hamburger {
+            display: none;
+        }
+
+        #logo-cont {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        #logo-circle {
+            position: absolute;
+            left: 0px;
+            margin-top: 17px;
+        }
+
+        #dark-mode {
+            margin-left: 230px;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            display: flex;
+            flex-grow: 1;
+
+            ul {
+                display: flex;
+                li:first-child {
+                    padding: 11px 23px;
+
+                }
+            }
+        }
+
+        #nav {
+            flex-grow: 4;
+        }
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        #logo-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        #hamburger {
+            margin-top: 18px;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        ul {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        #logo-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        #hamburger {
+            margin-top: 18px;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        ul {
+            display: block;
+        }
+    }
+}

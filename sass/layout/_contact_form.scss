@@ -1,0 +1,105 @@
+#contact {
+
+    #contactForm {
+        div {
+            display: flex;
+            margin-bottom: 21px;
+            border-bottom: 1px solid var(--color-gray-8);
+        
+            img {
+                top: -5px;
+                left: 5px;
+                position: relative;
+            }
+
+            h1 {
+                position: relative;
+                width: 100%;
+                left: -50px;
+                padding-left: 70px;
+                font-size: var(--font-size-6);
+                font-family: var(--font-family-1);
+                color: var(--color-orange-1);
+                font-weight: 300;
+                padding-bottom: 14px;
+
+                span {
+                    color: var(--color-gray-2);
+                }
+
+            }
+        }
+
+        p {
+            font-size: var(--font-size-1);
+            line-height: 18px;
+            color: var(--color-gray-4);
+            font-family: var(--font-family-2);
+            margin-right: 10px;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: var(--font-size-1);
+            line-height: 18px;
+            color: var(--color-gray-4);
+            font-family: var(--font-family-2);
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 10px;
+            width: 117px;
+        }
+
+        label[for=message] {
+            position: relative;
+            top: -80px;
+        }
+
+        input {
+            width: 360px;
+            height: 26px;
+        }
+
+        textarea {
+            width: 422px;
+            height: 92px;
+            resize: none;
+            margin-bottom: 0;
+        }
+
+        input,
+        textarea {
+            background-color: var(--color-gray-13);
+            border: 1px solid var(--color-gray-14);
+            margin-bottom: 25px;
+        }
+
+        input[type=submit] {
+            background: var(--gradient-button);
+            font-size: var(--font-size-1);
+            width: 91px;
+            height: 24px;
+            border-radius: 11px;
+            color: var(--color-gray-5);
+            border: 1px solid var(--color-gray-9);
+            font-family: var(--font-family-2);
+            margin-left: 132px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        #contactForm label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contactForm input,
+        #contactForm textarea {
+            width: 100%;
+        }
+
+        #contactForm label[for=message] {
+            position: static;
+        }
+    }
+}

@@ -1,0 +1,269 @@
+#index {
+    @media screen and (min-width: 1025px) {
+
+        body {
+            display: grid;
+            grid-template-rows: repeat(10, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        main {
+            grid-row: 2 / span 10;
+            grid-column: 1 / span 6;
+            display: grid;
+            grid-template-rows: repeat(8, 1fr) 1fr;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        section#content {
+            grid-row: 1 / span 3;
+            grid-column: 1 / span 6;
+
+        }
+
+        .service-box {
+            grid-row: 4 / span 2;
+            grid-column: span 2;
+        }
+
+        #welcome {
+            grid-row: 6 / span 3;
+            grid-column: 1 / span 4;
+        }
+
+        #subscribe_follow {
+            grid-row: 6 / span 3;
+            grid-column: 5 / span 2;
+        }
+
+        footer {
+            grid-row: 10 / span 1;
+            grid-column: 1 / span 6;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "header header header header"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "footer footer footer footer";
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "content content content content"
+                "web_desing  web_desing solutions solutions"
+                "testimonial testimonial subscribe subscribe"
+                "welcome welcome welcome welcome";
+        }
+
+        section#content {
+            grid-area: content;
+        }
+
+        #subscribe_follow {
+            grid-area: subscribe;
+        }
+
+        #web_desing {
+            grid-area: web_desing;
+        }
+
+        #solutions {
+            grid-area: solutions;
+        }
+
+        #testimonial {
+            grid-area: testimonial;
+        }
+
+        #welcome {
+            grid-area: welcome;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+        body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "header header header header"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "footer footer footer footer";
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "content content"
+                "web_desing web_desing"
+                "solutions solutions"
+                "testimonial testimonial"
+                "subscribe subscribe"
+                "welcome welcome";
+        }
+
+        section#content {
+            grid-area: content;
+        }
+
+        #subscribe_follow {
+            grid-area: subscribe;
+        }
+
+        #web_desing {
+            grid-area: web_desing;
+        }
+
+        #solutions {
+            grid-area: solutions;
+        }
+
+        #testimonial {
+            grid-area: testimonial;
+        }
+
+        #welcome {
+            grid-area: welcome;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    }
+}
+
+#contact {
+    @media screen and (min-width: 1025px) {
+        body {
+            display: grid;
+            grid-template-rows: repeat(10, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        main {
+            grid-row: 2 / span 10;
+            grid-column: 1 / span 6;
+            display: grid;
+            grid-template-rows: repeat(9, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        section#contactForm {
+            grid-row: 1 / span 9;
+            grid-column: 1 / span 4;
+        }
+
+        #touch {
+            grid-row: 1 / span 9;
+            grid-column: 5 / span 2;
+
+        }
+
+        footer {
+            grid-row: 10 / span 1;
+            grid-column: 1 / span 6;
+        }
+    }
+}
+
+
+#clients {
+    @media screen and (min-width: 1025px) {
+        body {
+            display: grid;
+            grid-template-rows: repeat(10, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        main {
+            grid-row: 2 / span 10;
+            grid-column: 1 / span 6;
+            display: grid;
+            grid-template-rows: repeat(9, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        section#clie {
+            grid-row: 1 / span 9;
+            grid-column: 1 / span 4;
+
+            #client-img {
+                display: grid;
+                grid-template-rows: repeat(8, 1fr);
+                grid-template-columns: repeat(4, 1fr);
+
+                div {
+                    grid-row: span 4;
+                    grid-column: span 2;
+                }
+            }
+        }
+
+        #testis {
+            grid-row: 1 / span 9;
+            grid-column: 5 / span 2;
+
+        }
+
+        footer {
+            grid-row: 10 / span 1;
+            grid-column: 1 / span 6;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+        #client-img {
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+
+            div {
+                grid-row: span 4;
+                grid-column: span 2;
+            }
+        }
+
+    }
+}
